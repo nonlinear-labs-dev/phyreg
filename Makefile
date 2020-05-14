@@ -5,8 +5,7 @@ phyreg: $(SRC)
 
 
 install: phyreg
-	mkdir -p /usr/bin
-	install phyreg /usr/bin
+	install phyreg $(DESTDIR)/usr/bin
 
 clean:
 	rm -f devmem2
